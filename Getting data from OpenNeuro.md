@@ -42,7 +42,7 @@ dataset_name/
 
 OpenNeuro offers numerous publicly available datasets across different modalities. Reaching and using these datasets is only a few clicks away.
 
-```{python}
+```python
 import openneuro
 
 # Check dataset name you want to download from Openneuro
@@ -67,3 +67,19 @@ print("Current working directory:", os.getcwd())
 
 ```
 
+```python
+
+import os
+
+# Example: create inside a "data" folder
+base_dir = "data"
+dataset_name = "Raw_EEG"
+
+# Full folder path
+target_dir = os.path.join(base_dir, dataset_name)
+
+# Create all missing folders in the path
+os.makedirs(target_dir, exist_ok=True)
+
+print("Dataset will be saved to:", os.path.abspath(target_dir))
+```
