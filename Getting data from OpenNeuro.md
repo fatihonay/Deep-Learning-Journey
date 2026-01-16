@@ -49,7 +49,7 @@ import openneuro
 
 # Check dataset name you want to download from Openneuro
 dataset_name = "ds007020"
-# Download (takes 5-10 min first time, then cached)
+# Download (takes 5-10 min depending on size of dataset and internet speed)
 #openneuro.download(dataset=dataset_name,  target_dir="/content/dataset/Raw_EEG")
 ```
 
