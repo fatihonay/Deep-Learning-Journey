@@ -42,8 +42,6 @@ dataset_name/
 
 OpenNeuro offers numerous publicly available datasets across different modalities. Reaching and using these datasets is only a few clicks away.
 
-
-
 ```{python}
 import openneuro
 
@@ -52,5 +50,20 @@ dataset_name = "ds007020"
 
 # Download (takes 5-10 min depending on size of dataset and internet speed)
 #openneuro.download(dataset=dataset_name,  target_dir="/content/dataset/Raw_EEG")
+```
+
+Note that target_dir indicates the location where we want to store dataset. You can choose as you desire. If you dont know how to effectively locate your dataset, I recommend you to use this stragey;
+
+### Step 1: Find Your Current Working Directory
+Before downloading, it's helpful to know **where** your files will be saved by default. Run this cell to see the current folder (working directory):
+
+```python
+import os
+
+# Show the current working directory
+print("Current working directory:", os.getcwd())
+
+```{python}
+
 ```
 
