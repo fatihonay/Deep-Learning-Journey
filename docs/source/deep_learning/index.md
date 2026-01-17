@@ -9,7 +9,7 @@ This section covers deep learning architectures and their applications to EEG si
 exploring_cnns
 ```
 
-### Overview
+**Overview**
 
 
 Deep learning has revolutionized the analysis of neurophysiological signals. These tutorials will guide you through:
@@ -18,7 +18,7 @@ Deep learning has revolutionized the analysis of neurophysiological signals. The
 2. **Recurrent Neural Networks (RNNs)**: Temporal dynamics in brain signals (coming soon)
 3. **Variational Autoencoders (VAEs)**: Latent representations of neural activity (coming soon)
 
-### Why Deep Learning for EEG?
+**Why Deep Learning for EEG?**
 
 Traditional EEG analysis often requires manual feature engineering. Deep learning models can:
 
