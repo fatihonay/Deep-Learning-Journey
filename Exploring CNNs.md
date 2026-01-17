@@ -24,9 +24,17 @@ The figure below indicates the how convolution between 3x3 kernel (shaded matrix
 <img width="874" height="540" alt="image" src="https://github.com/user-attachments/assets/874ba1c1-6e6f-44a0-801d-45ac71db2b87" />
 
 **2. Activation**
+
 Convolution is a linear operation which simply multiplies and adds variables. However, real world data is often complex and non-linear, so we need an activation function to enable the network to learn intricate patterns. Without this non-linearity, the neural network would not be powerful enough to distinguish complex patterns. Actually, I am not sure how exactly this operation is useful but intiutively I agree with this opinion. We may discuss this point in the future but this is not in our scope for now.
 
+The most strandard activation functions used in CNN models is ReLU which applies non-linear transform on the feature map (output of convolution operation). This operation removes negative values and replaces them with zero. The figure below descibes this operation. Please stop here and review the figure for a moment.
+
+
 <img width="871" height="424" alt="image" src="https://github.com/user-attachments/assets/71738a12-17b2-472e-a990-45e10e988c46" />
+
+```{note}
+$$ f(x) = \max(0, x) $$
+```
 
 
 **2. Pooling**
