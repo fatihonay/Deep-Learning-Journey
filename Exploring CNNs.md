@@ -9,4 +9,5 @@ A simple CNN structure consists of two main sections: Feature Extraction and Cla
 <img width="3234" height="1569" alt="image" src="https://github.com/user-attachments/assets/8f2e256b-17a5-4481-b99d-bf21028906a5" />
 
 
-
+## Feature Extraction 
+Getting meaningful patterns from complex input data and then making decisions solely based on the deep learning models seems to be magical at first sight. However, this magic relies on very simple mathematical rules which is probably invented before you born ( I assume that you did not witness World War II) 
