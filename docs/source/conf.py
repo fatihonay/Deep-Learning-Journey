@@ -44,7 +44,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
 html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
-    "github_url": "https://github.com/YOUR_USERNAME/YOUR_REPO",  # Update this
+    "github_url": "https://github.com/fatihonay/Deep-Learning-Journey",  # Update this    
     "show_toc_level": 2,
     "navigation_depth": 3,
     "show_nav_level": 2,
