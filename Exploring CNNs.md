@@ -5,7 +5,7 @@ Convolutional neural networks maybe the most popular and widely used deep learni
 The modern deep learning architectures proved that they are capable of solving complex pattern recognition problems from different scientific domains including biomedical imaging and neuroscience.  These models minimize the effors of discovering and extracting feeatures from the raw datasets. Keep in mind that deep learning models learn certain patterns from data.
 
 
-https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fzilliz.com%2Fglossary%2Fconvolutional-neural-network&ved=0CBYQjRxqFwoTCKD_gt_wkpIDFQAAAAAdAAAAABAi&opi=89978449<img width="3234" height="1569" alt="image" src="https://github.com/user-attachments/assets/8f2e256b-17a5-4481-b99d-bf21028906a5" />
+<img width="3234" height="1569" alt="image" src="https://github.com/user-attachments/assets/8f2e256b-17a5-4481-b99d-bf21028906a5" />
 
 
 
