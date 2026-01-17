@@ -23,5 +23,19 @@ The figure below indicates the how convolution between 3x3 kernel (shaded matrix
 
 <img width="874" height="540" alt="image" src="https://github.com/user-attachments/assets/874ba1c1-6e6f-44a0-801d-45ac71db2b87" />
 
+**2. Activation**
+
+<img width="871" height="424" alt="image" src="https://github.com/user-attachments/assets/71738a12-17b2-472e-a990-45e10e988c46" />
+
+
+**2. Pooling**
+Pooling is a standard dimension reduction technique after performing convolution operation on the input data. 
+
+
+
+
+
+
+
 
 
