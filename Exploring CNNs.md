@@ -29,10 +29,12 @@ Convolution is a linear operation which simply multiplies and adds variables. Ho
 
 The most strandard activation functions used in CNN models is ReLU which applies non-linear transform on the feature map (output of convolution operation). This operation removes negative values and replaces them with zero. The figure below descibes this operation. Please stop here and review the figure for a moment.
 
+If we talk in math what ReLU activation does, this equation can easily explain it.
+
+$$ f(x) = \max(0, x) $$
 
 <img width="871" height="424" alt="image" src="https://github.com/user-attachments/assets/71738a12-17b2-472e-a990-45e10e988c46" />
 
-$$ f(x) = \max(0, x) $$
 
 
 **2. Pooling**
