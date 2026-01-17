@@ -10,4 +10,17 @@ A simple CNN structure consists of two main sections: Feature Extraction and Cla
 
 
 ## Feature Extraction 
-Getting meaningful patterns from complex input data and then making decisions solely based on the deep learning models seems to be magical at first sight. However, this magic relies on very simple mathematical rules which is probably invented before you born ( I assume that you did not witness World War II) 
+Getting meaningful patterns from complex input data and then making decisions solely based on the deep learning models seems to be magical at first sight. However, this magic relies on very simple mathematical rules which was probably invented before you born (I assume that you did not witness World War II). 
+
+```{note}
+**Convolution:**
+
+In the context of Deep Learning, **Convolution** is a mathematical operation used to extract features from an input (like an image or EEG signal).
+
+Imagine a small window (called a **kernel** or **filter**) sliding over your input data. At every step, the kernel performs element-wise multiplication with the part of the input it is currently covering, and then sums the results into a single number.
+
+This process transforms the raw input into a **Feature Map**, highlighting important patterns like edges, shapes, or specific frequency bands in brain signals.
+```
+
+
+
