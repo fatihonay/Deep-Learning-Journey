@@ -4,9 +4,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Project information -----------------------------------------------------
-project = 'Neural Variability Research'
-copyright = '2025, Fatih Erol'
-author = 'Fatih Erol'
+project = 'Deep Learning Journey'
+copyright = '2025, Fatih Onay, PhD'
+author = 'Fatih Onay'
 release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
