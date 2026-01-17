@@ -36,7 +36,7 @@ If you're new to this project, we recommend starting with the [](tutorials/index
 :maxdepth: 2
 :caption: Contents
 
-tutorials/index
+deep_learning/index
 api/index
 ```
 
