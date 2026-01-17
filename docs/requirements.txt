@@ -1,6 +1,0 @@
-# Documentation build requirements
-sphinx>=7.0
-pydata-sphinx-theme>=0.14
-myst-parser>=2.0
-sphinx-copybutton>=0.5
-nbsphinx>=0.9
