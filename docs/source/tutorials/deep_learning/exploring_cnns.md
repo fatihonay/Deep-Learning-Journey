@@ -6,7 +6,7 @@ The modern deep learning architectures proved that they are capable of solving c
 
 A simple CNN structure consists of two main sections: **Feature Extraction** and **Classification**. Each section has a unique architecture designed to realize specific tasks. Let's start with the first part of the CNN and discuss the details of the feature extraction architecture.
 
-<img width="3234" height="1569" alt="CNN Architecture" src="https://github.com/user-attachments/assets/8f2e256b-17a5-4481-b99d-bf21028906a5" />
+<img width="3234" height="1569" alt="image" src="https://github.com/user-attachments/assets/8f2e256b-17a5-4481-b99d-bf21028906a5" />
 
 ## Feature Extraction
 
