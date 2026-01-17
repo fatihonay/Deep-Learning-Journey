@@ -18,5 +18,7 @@ Convolution:
 In the context of Deep Learning, convolution is a mathematical operation used to extract features from an input data. Imagine a small window (kernel) sliding over your input data. At every step, the kernel performs element-wise multiplication with the part of the input, and then sums the results into a single number. This process transforms the raw input into a feature map, highlighting important patterns like edges, shapes, or specific frequency bands in brain signals.
 ```
 
+<img width="874" height="540" alt="image" src="https://github.com/user-attachments/assets/874ba1c1-6e6f-44a0-801d-45ac71db2b87" />
+
 
 
