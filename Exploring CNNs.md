@@ -32,9 +32,7 @@ The most strandard activation functions used in CNN models is ReLU which applies
 
 <img width="871" height="424" alt="image" src="https://github.com/user-attachments/assets/71738a12-17b2-472e-a990-45e10e988c46" />
 
-```{note}
 $$ f(x) = \max(0, x) $$
-```
 
 
 **2. Pooling**
