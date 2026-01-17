@@ -19,6 +19,7 @@ In the context of Deep Learning, convolution is a mathematical operation used to
 ```{note}
 Convolution is a simple dot product operation.
 ```
+The figure below indicates the how convolution between 3x3 kernel (shaded matrix) and 5x5 input (blue matrix) is performed to obtain 3x3 output (green matrix). Note that the size of input and output is different in that case due to the edge limitation. Padding strategies (like zero padding) can be employed to preserve the spatial dimensions, but this involves adding artificial information around the borders of the input to allow the kernel to process the edges.
 
 <img width="874" height="540" alt="image" src="https://github.com/user-attachments/assets/874ba1c1-6e6f-44a0-801d-45ac71db2b87" />
 
