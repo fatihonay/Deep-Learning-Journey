@@ -43,20 +43,21 @@ Non-linear activation function allows the network to model complex, non-linear p
 
 
 **3. Pooling**
-Pooling is a standard dimension reduction technique after performing convolution operation on the input data. Additionally, 
+Pooling is a standard dimension reduction technique after performing convolution operation on the input data. Unlike convolution, pooling does not involve learning weights. It uses a fixed mathematical logic on a local region (the window of a certain size). There are two types of pooling;
 
-**Max Pooling Logic:**
+- Max pooling: Take max value within the window of interest
+- Average pooling: Get average of values within the window of interest
 
-Unlike convolution, pooling does not involve learning weights. It uses a fixed mathematical logic on a local region $R$ (the window):
+```{note}
+Pooling is a way of reducing dimension and enhancing robustness against fluctuations within the data.
+```
 
-$$ y = \max(R) $$
+<img width="596" height="439" alt="image" src="https://github.com/user-attachments/assets/2b6ab03e-cdf3-48fd-a94f-5da738250615" />
 
-This simply means: look at the numbers inside the window and keep **only the largest one**.
 
-For example, if your $2 \times 2$ window covers the values:
-$$ \begin{bmatrix} 1 & 3 \\ 2 & 9 \end{bmatrix} $$
 
-Max pooling outputs **9**. This preserves the strongest feature (the "loudest" signal) while discarding the background noise.
+
+
 
 
 
