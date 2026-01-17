@@ -14,7 +14,7 @@ Getting meaningful patterns from complex input data and then making decisions so
 
 **1. Convolution**
 
-In the context of Deep Learning, convolution is a mathematical operation used to extract features from an input data. Imagine a small window (kernel) sliding over your input data. At every step, the kernel performs element-wise multiplication with the part of the input, and then sums the results into a single number. This process transforms the raw input into a feature map, highlighting important patterns like edges, shapes, or specific frequency bands in brain signals.
+In the context of Deep Learning, convolution is a mathematical operation used to extract features from an input data. Imagine a small window (kernel) sliding over your input data. At every step, the kernel performs element-wise multiplication with the part of the input, and then sums the results into a single number. This process transforms the raw input into a **feature map**, highlighting important patterns like edges, shapes, or specific frequency bands in brain signals.
 
 ```{note}
 Convolution is a simple dot product operation.
@@ -24,6 +24,7 @@ The figure below indicates the how convolution between 3x3 kernel (shaded matrix
 <img width="874" height="540" alt="image" src="https://github.com/user-attachments/assets/874ba1c1-6e6f-44a0-801d-45ac71db2b87" />
 
 **2. Activation**
+Convolution is a linear operation which simply multiplies and adds variables. However, real world data is often complex and non-linear, so we need an activation function to enable the network to learn intricate patterns. Without this non-linearity, the neural network would not be powerful enough to distinguish complex patterns. Actually, I am not sure how exactly this operation is useful but intiutively I agree with this opinion. We may discuss this point in the future but this is not in our scope for now.
 
 <img width="871" height="424" alt="image" src="https://github.com/user-attachments/assets/71738a12-17b2-472e-a990-45e10e988c46" />
 
