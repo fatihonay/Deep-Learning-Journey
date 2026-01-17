@@ -57,7 +57,7 @@ html_theme_options = {
         },
     ],
     "logo": {
-        "text": "Neural Variability Research",
+        "text": "Deep Learning Journey",
     },
     "footer_start": ["copyright"],
     "footer_end": ["theme-version"],
