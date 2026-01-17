@@ -11,6 +11,7 @@ exploring_cnns
 
 ## Overview
 
+
 Deep learning has revolutionized the analysis of neurophysiological signals. These tutorials will guide you through:
 
 1. **Convolutional Neural Networks (CNNs)**: Feature extraction from EEG signals
