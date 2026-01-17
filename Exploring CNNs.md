@@ -33,6 +33,11 @@ If we talk in math what ReLU activation does, this equation can easily explain i
 
 $$ f(x) = \max(0, x) $$
 
+```{note}
+Non-linear activation function allows the network to model complex, non-linear patterns.
+```
+
+
 <img width="871" height="424" alt="image" src="https://github.com/user-attachments/assets/71738a12-17b2-472e-a990-45e10e988c46" />
 
 
