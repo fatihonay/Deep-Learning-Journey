@@ -1,0 +1,32 @@
+/* Custom CSS for Neural Variability Research Documentation */
+
+/* Improve note/admonition styling */
+.admonition {
+    border-radius: 4px;
+}
+
+/* Code block improvements */
+div.highlight pre {
+    border-radius: 4px;
+}
+
+/* Figure captions */
+figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5em;
+}
+
+/* Math equation styling */
+.math {
+    font-size: 1.1em;
+}
+
+/* Table styling */
+table {
+    margin: 1em 0;
+}
+
+th {
+    background-color: #f5f5f5;
+}
