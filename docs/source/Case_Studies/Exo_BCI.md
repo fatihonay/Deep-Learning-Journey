@@ -24,7 +24,9 @@ Each session includes multiple motor imagery tasks organized as follows:
 **Trial:** The trial phase consists of 12 closed-loop BMI trials per session, labeled trial01 to trial12. During these trials, participants use motor imagery to control the exoskeleton in real time.
 
 Block 1: Trials 1–4
+
 Block 2: Trials 5–8
+
 Block 3: Trials 9–12
 
 **walk6min / stop6min:** After completing the 12 trials, participants perform two extended motor imagery tasks:
@@ -33,5 +35,10 @@ walk6min – Imagining continuous walking for 6 minutes
 stop6min – Imagining standing still for 6 minutes
 
 
+As you can see, there are three main part of this BCI dataset as training, trials and walk6min/stop6min. Each participant followed this task design in each session.
+
+```{note}
+Here, a *session* refers to one complete run of the task design. Sessions could be organized in different days, weeks or months to collect data.
+```
 
   
