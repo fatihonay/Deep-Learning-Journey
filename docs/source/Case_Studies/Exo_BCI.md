@@ -72,6 +72,14 @@ TEST:      [Session 8 trials] [Session 9 trials]
 
 
 
+| Phase             | Input (Stimulus)        | User Action                | System Output                         |
+|-------------------|-------------------------|----------------------------|---------------------------------------|
+| Training          | Systematic auditory beeps | Timed motor imagery        | None (EEG recording only)             |
+| Trials (01–12)    | Systematic auditory beeps | Timed motor imagery        | Real-time exoskeleton motion          |
+| Sustained (6 min) | None (self-paced)        | Continuous motor imagery   | Real-time exoskeleton motion          |
+
+
+
 
 
 
