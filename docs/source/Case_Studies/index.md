@@ -7,6 +7,5 @@ This section covers deep learning applications on specific neural datasets.
 :caption: Case Studies
 
 Exo_BCI
-Dataset from OpenNEURO.md
 ```
 
