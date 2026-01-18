@@ -6,8 +6,8 @@ This section covers deep learning architectures and their applications to EEG si
 :maxdepth: 2
 :caption: Deep Learning Topics
 
-exploring_cnns
 Dataset from OpenNEURO
+exploring_cnns
 ```
 
 **Overview**
