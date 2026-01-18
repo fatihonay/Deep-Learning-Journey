@@ -43,9 +43,11 @@ Here, a *session* refers to one complete run of the task design. Sessions could 
 
 There are totally 9 sessions for each subject. Dont worry, thing will not get complicated. Each session is in same structure. Therefore, once we understand the a session from single subject, we will completely understand what is goin on in this dataset.
 
-
+The succesful BCI implementation highly depends on decoder 
 
 ## Scenario 
+
+
 
 ```text
 
@@ -58,6 +60,16 @@ VALIDATE:  [Session 8 training] [Session 9 training]
 TEST:      [Session 8 trials] [Session 9 trials]
            └───── Current usage ─────┘
 ```
+
+
+| Event Tag                  | Likely Purpose                                                                 |
+|---------------------------|----------------------------------------------------------------------------------|
+| `acq-rexcommand`           | Logs the specific command sent to the exoskeleton (e.g., *Start Walking*).       |
+| `acq-rexstate`             | Logs the physical state of the exoskeleton (e.g., *Left Leg Swing*, *Standing*). |
+| `acq-infoclosedloop`       | contains the decoder output (BMI prediction probability)during closed-loop control.|
+| `recording-beep_stim`      | Auditory cues signaling the user to start or stop motor imagery.                 |
+| `recording-failcounter`   | Tracks errors or false activations during closed-loop trials (e.g., `task-trial01`). |
+
 
 
 
