@@ -28,11 +28,6 @@ I designed a simple table for what we will use during this journey.  I listed th
 This documentation is under active development. New tutorials and content will be added regularly.
 ```
 
-```
-## Getting Started
-
-If you're new to this project, we recommend starting with the [](tutorials/index.md) section.
-```
 
 ```{toctree}
 :maxdepth: 2
@@ -40,14 +35,6 @@ If you're new to this project, we recommend starting with the [](tutorials/index
 
 deep_learning/index
 api/index
-```
-
-## Installation
-
-To use the code in these tutorials, install the required dependencies:
-
-```bash
-pip install mne numpy scipy matplotlib braindecode torch
 ```
 
 
