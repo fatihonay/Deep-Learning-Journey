@@ -34,7 +34,7 @@ This documentation is under active development. New tutorials and content will b
 :caption: Contents
 
 deep_learning/index
-case
+Case
 api/index
 ```
 
