@@ -41,4 +41,31 @@ As you can see, there are three main part of this BCI dataset as training, trial
 Here, a *session* refers to one complete run of the task design. Sessions could be organized in different days, weeks or months to collect data.
 ```
 
+There are totally 9 sessions for each subject. Dont worry, thing will not get complicated. Each session is in same structure. Therefore, once we understand the a session from single subject, we will completely understand what is goin on in this dataset.
+
+
+
+## Scenario 
+
+```text
+
+TRAIN:     [Session 1] [Session 2] ... [Session 7]
+           └─────────── Past data ─────────────┘
+           
+VALIDATE:  [Session 8 training] [Session 9 training]
+           └──── Recent calibration ────┘
+           
+TEST:      [Session 8 trials] [Session 9 trials]
+           └───── Current usage ─────┘
+```
+
+
+
+
+
+
+
+
+
+
   
