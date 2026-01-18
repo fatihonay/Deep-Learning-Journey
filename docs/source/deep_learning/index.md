@@ -7,7 +7,7 @@ This section covers deep learning architectures and their applications to EEG si
 :caption: Deep Learning Topics
 
 exploring_cnns
-Dataset from OpenNEURO.md
+Dataset from OpenNEURO
 ```
 
 **Overview**
