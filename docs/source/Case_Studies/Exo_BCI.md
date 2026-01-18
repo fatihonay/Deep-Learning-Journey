@@ -9,4 +9,29 @@ https://openneuro.org/datasets/ds006940/versions/1.0.0
 This dataset contains multimodal recordings from a brain–machine interface (BMI) training study involving seven healthy adult participants (ages 20–30, Mean = 24.3, SD = 3.8). The study focused on open-loop and closed-loop control of a lower-limb exoskeleton (Rex Bionics) using EEG and inertial sensor data. Each participant completed nine sessions over several weeks, structured into training and trial phases.
 ```
 
+Actually this dataset consist of two modalities;
+- **EEG:** 60 scalp channels + 4 EOG channels
+- **IMU** 3-axis accelerometer, gyroscope, magnetometer, and quaternion
 
+We will ignore IMU data and focus on EEG signals. Of course you can also benefit from IMU modality to incorporate your decoding system with more information. For now, let me to delve into EEG dataset for our journey. 
+
+## Task Structure 
+
+Each session includes multiple motor imagery tasks organized as follows:
+
+**Training:** The training phase is used to calibrate the BMI decoder. Participants perform motor imagery tasks without feedback.
+
+**Trial:** The trial phase consists of 12 closed-loop BMI trials per session, labeled trial01 to trial12. During these trials, participants use motor imagery to control the exoskeleton in real time.
+
+Block 1: Trials 1–4
+Block 2: Trials 5–8
+Block 3: Trials 9–12
+
+**walk6min / stop6min:** After completing the 12 trials, participants perform two extended motor imagery tasks:
+
+walk6min – Imagining continuous walking for 6 minutes
+stop6min – Imagining standing still for 6 minutes
+
+
+
+  
