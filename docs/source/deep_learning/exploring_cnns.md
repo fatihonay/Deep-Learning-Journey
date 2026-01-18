@@ -6,7 +6,7 @@ The modern deep learning architectures proved that they are capable of solving c
 
 A simple CNN structure consists of two main sections: Feature Extraction and Classification. Each section has a unique architecture designed to realize specific tasks. Let's start with the first part of the CNN and discuss the details of the feature extraction architecture.
 
-<img width="1617" height="765" alt="image" src="https://github.com/user-attachments/assets/8f2e256b-17a5-4481-b99d-bf21028906a5" />
+<img width="1617" height="665" alt="image" src="https://github.com/user-attachments/assets/8f2e256b-17a5-4481-b99d-bf21028906a5" />
 
 
 ## Feature Extraction 
@@ -56,8 +56,9 @@ Pooling is a way of reducing dimension and enhancing robustness against fluctuat
 
 
 ## Classification
+In the first phase of the CNN model, we learned how model extract features throughout the its convolutional hidden layers. Now, it is time to review the part This part is going to be using those features to do some form of detection from input data.
 
-*Coming soon: This section will cover fully connected layers and the classification head of CNNs.*
+How can we take the features that are learned from phase one to inform our classification phase. 
 
 ## Summary
 
