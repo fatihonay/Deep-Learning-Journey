@@ -34,6 +34,7 @@ This documentation is under active development. New tutorials and content will b
 :caption: Contents
 
 deep_learning/index
+Foundation Models/index
 Case_Studies/index
 api/index
 ```
