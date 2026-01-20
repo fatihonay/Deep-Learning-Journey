@@ -29,7 +29,12 @@ If you get familiar with the context, now we can review architecture and trainin
 
 ##  In the sha-ha-sha-la-la-la-llow
 
-I gues you know the famous song from Lady Gaga and Bradley Cooper - Shallow. Yep, this is a love song and it may sound irrelevant in middle of deep learning models. Let me to create meteaphor for our topic please. 
+You probably know the famous song "Shallow" by Lady Gaga and Bradley Cooper. Yes, it is a love song, and it might seem irrelevant in the middle of a deep learning tutorial, but let me create a metaphor for our topic.
+
+Two lovers are telling some phrases to each other to declare their emotions in this world. And finally they agreed to deep dive through the surface and being far way from the shallow. Because, they know that other will know their intentions, feelings, privates in the shallow. 
+In our case, we face a similar choice with our models. We can stay with the Shallow model where the features are known and interpretable. Or, we can choose the Deep model to discover complex, hidden patterns where our understanding cannot reach.  
+
+
 
 ```{note}
 I'm off the deep end, watch as I dive in
@@ -42,6 +47,8 @@ In the sha-ha-sha-la-la-la-llow
 In the sha-ha, sha-ha-llow
 We're far from the shallow now
 ```
+
+
 
   
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
