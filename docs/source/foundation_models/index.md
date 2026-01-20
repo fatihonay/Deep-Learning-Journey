@@ -7,5 +7,5 @@ The world of neuroscience deep learning models offers rich variety of options fo
 :caption: Foundation Models
 
 ShallowFBCSPNet
-
+DeepSleepNet
 ```
