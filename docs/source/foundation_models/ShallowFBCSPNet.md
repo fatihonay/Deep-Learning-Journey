@@ -51,7 +51,7 @@ I offer you to continue with shallow model, namely **ShallowFBCSPNet** which is 
 
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
 
-## Model Parameters 
+## Model Design 
 The logic behid the selection of model parameters will show us to how clever tricks can create useful modern version of classical tools like FBCSP. The desing of this modely was implemented wisely rather than blind criteria. Let's review these tirkcs together;
 
 - Instead of using common activation functions (like ReLU), the model uses a squaring function. This was done to mimic the calculation of **power**, exactly as it is done in the classic FBCSP algorithm.
