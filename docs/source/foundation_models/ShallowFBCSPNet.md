@@ -62,6 +62,11 @@ The logic behid the selection of model parameters will show us to how clever tri
 
 At the final stage, model employs dense layer with softmax activation function with number of unit equals to the number of classes in the decoding problem (for example MI movements of Hand (L) - Hand (R)- Feet - Rest)
 
+```{attention}
+I will share example application codes for this model in the upcoming days. For further inquiry, you can send an e-mail to me.
+fatih.onay@btu.edu.tr
+```
+
 
 ## References
 [^1]: SCHIRRMEISTER, Robin Tibor, et al. Deep learning with convolutional neural networks for EEG decoding and visualization. Human brain mapping, 2017, 38.11: 5391-5420.
