@@ -63,4 +63,8 @@ The logic behid the selection of model parameters will show us to how clever tri
 At the final stage, model employs dense layer with softmax activation function with number of unit equals to the number of classes in the decoding problem (for example MI movements of Hand (L) - Hand (R)- Feet - Rest)
 
 
+## References
+[^1]: Clevert et al., "Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)", 2016.
+[^2]: Ang et al., "Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface", 2008.
+
 
