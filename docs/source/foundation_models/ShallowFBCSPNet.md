@@ -24,7 +24,15 @@ As a computational neuroscienist, I always questioning the what exaclty deep lea
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
 
 
-## Persuading the sources to reveal themselves (Entrance Layer)
+## Persuading the sources to reveal themselves (Entrance Layer)
+The entrance of the model focuses on spatial information which are global representative feature 
+
+
+| Input (Raw EEG) | The ConvNet Filter (The "Unmixer") | The Output (Virtual Source) |
+| :--- | :--- | :--- |
+| **Shape:** $64 \times T$ | **Shape:** $64 \times 1$ | **Shape:** $1 \times T$ |
+| A messy mix of 64 sensors recording noise and signals. | A learned set of weights (positive/negative) for each sensor. | A clean time-series of **one specific brain pattern** (unmixed from the noise). |
+
 
 
 
