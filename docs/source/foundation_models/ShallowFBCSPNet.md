@@ -21,11 +21,13 @@ As a computational neuroscienist, I always questioning the what exaclty deep lea
  We want to understand what features in the brain signal discriminate the investigated classes.  
 
   
-
-
-
-
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
+
+
+## Persuading the sources to reveal themselves (Entrance Layer)
+
+
+
 
 
 
