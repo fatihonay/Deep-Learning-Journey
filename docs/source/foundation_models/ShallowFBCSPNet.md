@@ -12,26 +12,26 @@ ShallowFBCSPNet is a modern CNN architecture for specialing EEG decoding tasks. 
 - How to design architecture of the model to meet expectations?
 - Which training strategy should we use for such a model?
 
-
 As a computational neuroscienist, I always questioning the what exaclty deep learning models learn from data. This is important due to the two main reasons;
 
 - Knowing which features deep learning models learn allows us to create generalizable models independent from specific datasets.
 - Understanding the internal representations learned by deep models allows architectural and training design choices
 
- We want to understand what features in the brain signal discriminate the investigated classes.  
+We want to understand what features in the brain signal discriminate the investigated classes. We aim to create such models find these features and use them for the classification task. Beyond, we can also create models to extract features determined by prior domain knowledge. At this point, I would like you to notice this notation;
+
+- Shallow: This architecture is specifically for prior domain knowledg to extract known features through single conolutional layer.
+  
+- Deep: This architecture is designed as a generic model to learn a wide range of features from scratch rather than being restricted to specific feature types (3-5 layers).
+  
+- Residual: This specific architecture is generally used to extend the capabilities of deep models (40-60 layers).
+
+
 
   
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
 
 
-## Persuading the sources to reveal themselves (Entrance Layer)
-The entrance of the model focuses on spatial information which are global representative feature 
 
-
-| Input (Raw EEG) | The ConvNet Filter (The "Unmixer") | The Output (Virtual Source) |
-| :--- | :--- | :--- |
-| **Shape:** $64 \times T$ | **Shape:** $64 \times 1$ | **Shape:** $1 \times T$ |
-| A messy mix of 64 sensors recording noise and signals. | A learned set of weights (positive/negative) for each sensor. | A clean time-series of **one specific brain pattern** (unmixed from the noise). |
 
 
 
