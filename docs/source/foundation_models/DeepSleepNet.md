@@ -1,8 +1,6 @@
 # DeepSleepNet
 
-Can deep learning models learn everything? Even the sleep stages from neurophysilogical data ? For the first question, I dont have an answer but the second question answwered by Supratak and him buddies in the article titled " DeepSleepNet: A Model for Automatic Sleep Stage Scoring Based on Raw Single-Channel EEG" [^1]
-
-automatic sleep stage scoring based on raw single-channelEEG.
+Can deep learning models learn everything? Even the sleep stages from neurophysilogical data ? For the first question, I dont have an answer but the second question answwered by Supratak and him buddies in the article titled " DeepSleepNet: A Model for Automatic Sleep Stage Scoring Based on Raw Single-Channel EEG" [^1]. In this articlei they introduced a model which performs automatic sleep stage scoring based on raw single-channel EEG.
 
 
 
