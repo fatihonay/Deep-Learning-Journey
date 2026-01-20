@@ -31,8 +31,8 @@ If you get familiar with the context, now we can review architecture and trainin
 
 You probably know the famous song "Shallow" by Lady Gaga and Bradley Cooper. Yes, it is a love song, and it might seem irrelevant in the middle of a deep learning tutorial, but let me create a metaphor for our topic.
 
-Two lovers are telling some phrases to each other to declare their emotions in this world. And finally they agreed to deep dive through the surface and being far way from the shallow. Because, they know that other will know their intentions, feelings, privates in the shallow. 
-In our case, we face a similar choice with our models. We can stay with the Shallow model where the features are known and interpretable. Or, we can choose the Deep model to discover complex, hidden patterns where our understanding cannot reach.  
+Two lovers are telling some phrases to each other to declare their emotions in this world. And finally they agree to deep dive through the surface and being far away from the shallow. Because, they know that others will know their intentions, feelings and secrets in the shallow. 
+In our case, we face a similar choice criteria with our models. We can stay with the Shallow model where the features are known and interpretable. Or, we can choose the Deep model to discover complex, hidden patterns where our understanding may not reach eventually.  
 
 
 
