@@ -28,13 +28,10 @@ We want to understand what features in the brain signal discriminate the investi
 If you get familiar with the context, now we can review architecture and training strategies ShallowFBCSPNet. 
 
 ##  In the sha-ha-sha-la-la-la-llow
-
 You probably know the famous song "Shallow" by Lady Gaga and Bradley Cooper. Yes, it is a love song, and it might seem irrelevant in the middle of a deep learning tutorial, but let me create a metaphor for our topic.
 
 Two lovers are telling some phrases to each other to declare their emotions in this world. And finally they agree to deep dive through the surface and being far away from the shallow. Because, they know that others will know their intentions, feelings and secrets in the shallow. 
 In our case, we face a similar choice criteria with our models. We can stay with the Shallow model where the features are known and interpretable. Or, we can choose the Deep model to discover complex, hidden patterns where our understanding may not reach eventually.  
-
-
 
 ```{note}
 I'm off the deep end, watch as I dive in
@@ -47,6 +44,10 @@ In the sha-ha-sha-la-la-la-llow
 In the sha-ha, sha-ha-llow
 We're far from the shallow now
 ```
+I offer you to continue with shallow model, namely **ShallowFBCSPNet** which is a modern filter-bank CSP. Since this modely is shallow, it consists of one layer of concatanated convolutional layer and one output/classification layer.
+
+
+
 
 
 
