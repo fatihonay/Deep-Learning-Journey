@@ -51,15 +51,14 @@ I offer you to continue with shallow model, namely **ShallowFBCSPNet** which is 
 
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
 
-Squaring instead of standard activation: Instead of using common AI activation functions (like ReLU, which just zeros out negatives), they chose a squaring function. This was done to mimic the calculation of "power" (energy), exactly as it is done in the classic FBCSP algorithm.
+## Model Parameters 
 
-Keeping the filters whole (No Factorization): In some modern AI networks, large filters are broken down into smaller, simpler pieces to save power (factorization). The authors skipped this step for the Shallow ConvNet because its time filters are very long (25 samples) and specialized. They decided these "long" filters were too different from standard image recognition filters to benefit from being broken down.
+- Instead of using common activation functions (like ReLU), the model uses a squaring function. This was done to mimic the calculation of **power**, exactly as it is done in the classic FBCSP algorithm.
 
-The "Log" vs. "Root" Test: After averaging the data (pooling), the signal needs to be scaled. They compared two methods:
+- In classicala convolutional networks, large filters are broken down into smaller, simpler pieces to save power. The model skipped this step for the Shallow ConvNet because its time filters are already long (25 samples) and specialized. Therefore, the model uses width (one big kernel) over depth (many small layers) to keep the signal processing clean and accurate to the physics of brain.
+  
+- After averaege pooling, the signal needs to be scaled. The model uses Logarithm  for the method inspired by the classic FBCSP brain decoder. 
 
-Logarithm: The method inspired by the classic FBCSP brain decoder.
-
-Square Root: The method used in traditional "L2-pooling" in standard AI. They wanted to prove if the brain-inspired "Log" method was actually better than the standard math "Root" method for this specific task.
 
 
 
