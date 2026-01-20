@@ -25,6 +25,9 @@ We want to understand what features in the brain signal discriminate the investi
   
 - Residual: This specific architecture is generally used to extend the capabilities of deep models (40-60 layers).
 
+If you get familiar with the context, now we can review architecture and training strategies ShallowFBCSPNet. 
+
+## 
 
 
   
@@ -34,6 +37,15 @@ We want to understand what features in the brain signal discriminate the investi
 
 
 
+```text
+I'm off the deep end, watch as I dive in
+
+I'll never meet the ground
+
+Crash through the surface, where they can't hurt us
+
+We're far from the shallow now
+```
 
 
 
