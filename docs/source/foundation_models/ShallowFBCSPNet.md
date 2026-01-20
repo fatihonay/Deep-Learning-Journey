@@ -12,6 +12,14 @@ ShallowFBCSPNet is a modern CNN architecture for specialing EEG decoding tasks. 
 - How to design architecture of the model to meet expectations?
 - Which training strategy should we use for such a model?
 
+
+As a computational neuroscienist, I always questioning the what exaclty deep learning models learn from data. This is important due to the two main reasons;
+
+- Knowing which features deep learning models learn allows us to create generalizable models independent from specific datasets.
+- Understanding the internal representations learned by deep models allows architectural and training design choices
+
+ We want to understand what features in the brain signal discriminate the investigated classes.  
+
   
 
 
