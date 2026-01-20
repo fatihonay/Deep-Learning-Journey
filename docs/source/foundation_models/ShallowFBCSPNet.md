@@ -27,25 +27,21 @@ We want to understand what features in the brain signal discriminate the investi
 
 If you get familiar with the context, now we can review architecture and training strategies ShallowFBCSPNet. 
 
-## 
+##  In the sha-ha-sha-la-la-la-llow
 
+I gues you know the famous song from Lady Gaga and Bradley Cooper - Shallow. Yep, this is a love song and it may sound irrelevant in middle of deep learning models. Let me to create meteaphor for our topic please. 
+
+```{note}
+I'm off the deep end, watch as I dive in
+I'll never meet the ground
+Crash through the surface, where they can't hurt us
+We're far from the shallow now
+```
 
   
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
 
 
-
-
-
-```text
-I'm off the deep end, watch as I dive in
-
-I'll never meet the ground
-
-Crash through the surface, where they can't hurt us
-
-We're far from the shallow now
-```
 
 
 
