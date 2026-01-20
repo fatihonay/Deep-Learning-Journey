@@ -7,7 +7,14 @@ In this section, I want to review architecture of this model and understand how 
 ```{note}
  ShallowFBCSPNet decodes task-related information from the raw EEG signals.
 ```
-ShallowFBCSPNet is a modern CNN architecture for specialing EEG decoding tasks. Apart from classical CNNS for image segmentation/classification, ShallowFBCSPNet gets dynamically evolving multi channel EEG signals as imput. The goal is to learn features which are capable of recognizing different mental states. 
+ShallowFBCSPNet is a modern CNN architecture for specialing EEG decoding tasks. Apart from classical CNNs for image segmentation/classification, ShallowFBCSPNet gets dynamically evolving multi channel EEG signals as imput. The goal is to learn features which are capable of recognizing different mental states. However, adaptation of CNN structures for such a specialized taks arises two fundamental problems;
+
+- How to design architecture of the model to meet expectations?
+- Which training strategy should we use for such a model?
+
+  
+
+
 
 
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
