@@ -44,14 +44,11 @@ In the sha-ha-sha-la-la-la-llow
 In the sha-ha, sha-ha-llow
 We're far from the shallow now
 ```
-I offer you to continue with shallow model, namely **ShallowFBCSPNet** which is a modern filter-bank CSP. Since this modely is shallow, it consists of one layer of concatanated convolutional layer and one output/classification layer.
+I offer you to continue with shallow model, namely **ShallowFBCSPNet** which is a modern filter-bank CSP (FBCSP). Since this model is shallow, it consists of one layer of concatanated convolutional layer (temporal convolution first and then spatial filtering) and one output/classification layer. After the temporal convolution and the spatial filter of the shallow model, a squaring nonlinearity, a mean pooling layer and a logarithmic activation function followed; together these steps are analogous to the log-variance computation in FBCSP. The figure below describes the internal mechanism of the model. Let's summarize each step;
 
+- The time window of 25 sample is employed on the each EEG channel. The number of units correspond to filter bank structure (40 filters)
+- Then, the spatial filter which appoints weights to each channel performs a convolution across all electrodes, combining the temporally filtered signals to learn spatial patterns.
 
-
-
-
-
-  
 <img width="604" height="566" alt="image" src="https://github.com/user-attachments/assets/0f8291d8-884c-449e-ad5e-25da733443a8" />
 
 
