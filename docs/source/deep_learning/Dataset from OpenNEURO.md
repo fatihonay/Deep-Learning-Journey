@@ -75,10 +75,10 @@ import os
 
 # Example: create inside a "data" folder
 base_dir = "dataset"
-dataset_name = "Raw_EEG"
+dataset_dir = "Raw_EEG"
 
 # Full folder path
-target_dir = os.path.join(base_dir, dataset_name)
+target_dir = os.path.join(base_dir, dataset_dir)
 
 # Create all missing folders in the path
 os.makedirs(target_dir, exist_ok=True)
@@ -87,6 +87,7 @@ print("Dataset will be saved to:", os.path.abspath(target_dir))
 ```
 
 ### Step 3:
+Yep, we know where we are. Now we will download dataset from OpenNeuro to this created folder.
 
 
 ```python
@@ -95,9 +96,7 @@ print("Dataset will be saved to:", os.path.abspath(target_dir))
 dataset_name = "ds007020"   # ← change this to your desired dataset ID
 
 # Use the folder from above (choose one of the variables)
-target_dir = "Raw_EEG"                # Option A
-# target_dir = os.path.join("data", "Raw_EEG")   # Option B
-
+# target_dir = os.path.join(base_dir, dataset_dir)   
 # Download (may take 5–30 minutes depending on size & connection)
 openneuro.download(
     dataset=dataset_name,
