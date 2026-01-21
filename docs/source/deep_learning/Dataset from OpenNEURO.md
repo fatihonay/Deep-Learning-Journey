@@ -58,7 +58,7 @@ Note that target_dir indicates the location where we want to store dataset. You 
 ### Step 1: Find Your Current Working Directory
 Before downloading, it's helpful to know **where** your files will be saved by default. Run this cell to see the current folder (working directory):
 
-```{python}
+```python
 import os
 
 # Show the current working directory
@@ -70,7 +70,7 @@ print("Current working directory:", os.getcwd())
 ### Step 2: Create a Folder in Working Directory
 Let's download dataset into our working directory. Firslty, we need to find our working directory and create root folders for dataset.
 
-```{python}
+```python
 import os
 
 # Example: create inside a "data" folder
@@ -88,7 +88,8 @@ print("Dataset will be saved to:", os.path.abspath(target_dir))
 
 ### Step 3:
 
-```{python}
+
+```python
 
 # The OpenNeuro dataset ID you want
 dataset_name = "ds007020"   # ← change this to your desired dataset ID
