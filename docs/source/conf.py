@@ -51,6 +51,7 @@ html_theme_options = {
     "home_page_in_toc": True,
     # This hides the secondary sidebar on the right if it's empty, making it cleaner
     "show_toc_level": 2, 
+    'logo_width': '20px',
 }
 
 # Keep these lines
