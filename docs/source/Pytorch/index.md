@@ -6,4 +6,5 @@ Simple and quick recap of Pytoch basics for everyone !
 :caption: Contents
 
 Pytorch_1.ipynb
+Pytorch_2.ipynb
 ```
