@@ -42,6 +42,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
 
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_book_theme'
+html_logo = "_static/logoDeep.png"
 
 html_theme_options = {
     "repository_url": "https://github.com/YOUR_USERNAME/YOUR_REPO",
@@ -51,13 +52,13 @@ html_theme_options = {
     "home_page_in_toc": True,
     # This hides the secondary sidebar on the right if it's empty, making it cleaner
     "show_toc_level": 2, 
-    'logo_width': '20px',
+    'logo_width': '5px',
+
 }
 
 # Keep these lines
 html_static_path = ['_static']
 html_css_files = ['custom.css']
-html_logo = "_static/logoDeep.png"
 
 # -- Intersphinx configuration -----------------------------------------------
 intersphinx_mapping = {
