@@ -68,7 +68,7 @@ print("Current working directory:", os.getcwd())
 
 
 ### Step 2: Create a Folder in Working Directory
-
+Let's download dataset into our working directory. Firslty, we need to find our working directory and create root folders for dataset.
 
 ```{python}
 import os
