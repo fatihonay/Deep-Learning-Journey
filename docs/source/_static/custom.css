@@ -1,4 +1,20 @@
-/* Custom CSS for Neural Variability Research Documentation */
+/* Custom CSS for Documentation */
+
+/* Apply only to Light Mode to avoid breaking Dark Mode */
+html[data-theme="light"] body {
+    /* A softer off-white base color */
+    background-color: #fafafa;
+    
+    /* The Dot Pattern */
+    background-image: radial-gradient(#e0e0e0 1.5px, transparent 1.5px);
+    background-size: 24px 24px; /* Distance between dots */
+}
+
+/* Optional: Ensure the main content container is slightly transparent 
+   so the pattern shows through, or keep it solid if you prefer cards */
+html[data-theme="light"] .bd-main .bd-content {
+    background: transparent; 
+}
 
 /* Improve note/admonition styling */
 .admonition {
