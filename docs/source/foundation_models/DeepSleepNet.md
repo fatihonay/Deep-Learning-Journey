@@ -5,7 +5,10 @@ Can deep learning models learn everything? Even the sleep stages from neurophysi
 
 There are two main stages of the DeepSleepNet model;
 
-- **Representation Learning:** Consists of 2 parallel CNN blocks (4 convolutional layers) which extract time invariant features from single-channel EEG time series. The reason behind using two branches of CNNs is to extract both time and frequency sensitive features. Small kernel sizes (Fs/2) are useful for time information while large kernel sizes (FsX4) are more appropriate for the frequency information.  Following these input layers, additional 3 convolutional layers are added with small kernel sizes. Note that using only one additional layer with larger kernel size would have been preferred but this scenario increases the number of parameters in the model. I recommedn you to keep this practical issue in your mind when trying to employ your own model.
+- **Representation Learning:** Consists of 2 parallel CNN blocks (4 convolutional layers) which extract time invariant features from single-channel EEG time series. The reason behind using two branches of CNNs is to extract both time and frequency sensitive features. Small kernel sizes (Fs/2) are useful for time information while large kernel sizes (FsX4) are more appropriate for the frequency information.  Following these input layers, additional 3 convolutional layers are added with small kernel sizes. Note that using only one additional layer with larger kernel size would have been preferred but this scenario increases the number of parameters in the model. I recommend you to keep this practical issue in your mind when trying to employ your own model.
+
+The input is 30 second 
+
 
 
 
