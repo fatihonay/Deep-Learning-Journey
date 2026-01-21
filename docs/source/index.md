@@ -36,6 +36,7 @@ This documentation is under active development. New tutorials and content will b
 deep_learning/index
 foundation_models/index
 Case_Studies/index
+Pytorch/index
 api/index
 ```
 
