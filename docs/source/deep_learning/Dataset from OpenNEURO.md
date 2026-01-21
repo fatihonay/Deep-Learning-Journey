@@ -65,15 +65,13 @@ import os
 # Show the current working directory
 print("Current working directory:", os.getcwd())
 
-```{python}
-
 ```
+
 
 ### Step 2: Create a Folder in Working Directory
 
 
-```python
-
+```{python}
 import os
 
 # Example: create inside a "data" folder
@@ -91,7 +89,7 @@ print("Dataset will be saved to:", os.path.abspath(target_dir))
 
 ### Step 3:
 
-```python
+```{python}
 
 # The OpenNeuro dataset ID you want
 dataset_name = "ds007020"   # ← change this to your desired dataset ID
