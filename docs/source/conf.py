@@ -56,6 +56,7 @@ html_theme_options = {
 # Keep these lines
 html_static_path = ['_static']
 html_css_files = ['custom.css']
+html_logo = "_static/logoDeep.png"
 
 # -- Intersphinx configuration -----------------------------------------------
 intersphinx_mapping = {
