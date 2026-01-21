@@ -22,11 +22,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      # --- FIX START: Install Pandoc ---
+      # Required by nbsphinx to convert notebooks to HTML
+      - name: Install Pandoc
+        run: sudo apt-get install -y pandoc
+      # --- FIX END ---
+
       - run: pip install -r docs/requirements.txt
-      - run: cd docs && make html
+      
+      # Added SPHINXOPTS="-v" to see specific error messages if it crashes
+      - run: cd docs && make html SPHINXOPTS="-v"
+      
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/_build/html
