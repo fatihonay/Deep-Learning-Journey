@@ -41,28 +41,19 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
 
 # -- Options for HTML output -------------------------------------------------
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'sphinx_book_theme'
 
 html_theme_options = {
-    "github_url": "https://github.com/YOUR_USERNAME/YOUR_REPO",  # Update this
-    "show_toc_level": 2,
-    "navigation_depth": 3,
-    "show_nav_level": 2,
-    "navbar_align": "left",
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/YOUR_USERNAME/YOUR_REPO",  # Update this
-            "icon": "fa-brands fa-github",
-        },
-    ],
-    "logo": {
-        "text": "Deep Learning Journey",
-    },
-    "footer_start": ["copyright"],
-    "footer_end": ["theme-version"],
+    "repository_url": "https://github.com/YOUR_USERNAME/YOUR_REPO",
+    "use_repository_button": True,
+    "use_download_button": True,
+    "show_navbar_depth": 2,
+    "home_page_in_toc": True,
+    # This hides the secondary sidebar on the right if it's empty, making it cleaner
+    "show_toc_level": 2, 
 }
 
+# Keep these lines
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 
