@@ -11,7 +11,9 @@ Each convolutional layer performs three operations sequentially: 1D-convolution 
 ```
 
   
-- **Sequence Residual Learning:**  Bidirectional-LSTMs can be trained to encode temporal information such as sleep stage transition rules into the model.
+- **Sequence Residual Learning:** This part consists of two main components as bidirectional-LSTMs and a short-cut connection.
+
+  Bidirectional-LSTMs can be trained to encode temporal information such as sleep stage transition rules into the model.
 
 
 <img width="1800" height="1050" alt="image" src="https://github.com/user-attachments/assets/4ce4a32f-716b-436b-b7b7-5a4b6dd5db32" />
@@ -19,6 +21,12 @@ Each convolutional layer performs three operations sequentially: 1D-convolution 
 
 
 
+| Component | Type | Kernel Size | Num Filters | Pool Size | Stride | Dropout |
+|-----------|------|-------------|-------------|-----------|-------------|---------|
+| Layer 1 | Conv1D | Fs/2 or 4XFs | 64 | - | Fs/16 or Fs/2 | 0.0 |
+| Layer 2 | MaxPool1D | - | - | 8 | 8 | 0.5 |
+| Layer 3-5 | Conv1D | 8 | 128 | - | - | 0.0 |
+| Layer 6 | MaxPool1D | - | - | 4 | 4 | 0.5 |
 
 
 
