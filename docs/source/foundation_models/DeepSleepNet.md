@@ -6,9 +6,9 @@ There are two main stages of the DeepSleepNet model;
 
 - **Representation Learning:** Consists of 2 parallel CNN blocks (4 convolutional layers) which extract features from single-channel EEG time series. The reason behind using two branches of CNNs is to extract both time and frequency sensitive features. Small kernel sizes (Fs/2) are useful for time information while large kernel sizes (FsX4) are more appropriate for the frequency information.  Following these input layers, additional 3 convolutional layers are added with smaller kernel sizes. Note that using only one additional layer with larger kernel size would have been preferred but this scenario increases the number of parameters in the model. I recommend you to keep this practical issue in your mind when trying to employ your own model. The input is designed for 30 second legth of single channel EEG because this lenght is common sense for analyzing sleep related neural data.
 
-  ```{note}
+```{note}
 Each convolutional layer performs three operations sequentially: 1D-convolution with its filters, batch normalization, and applying the rectified linear unit (ReLU) activation function.
-  ```
+```
 
   
 - **Sequence Residual Learning:**  Bidirectional-LSTMs can be trained to encode temporal information such as sleep stage transition rules into the model.
