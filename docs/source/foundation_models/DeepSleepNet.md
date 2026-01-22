@@ -30,6 +30,8 @@ Each convolutional layer performs three operations sequentially: 1D-convolution 
 
 
  ## Training and Handling Class Imbalance
+
+ The lenght of sleep stages are not equal and this situaiton leads imbalanced number of classes. This is serious issue since model could tend to learn only the majority of sleep stages.
  
 
 
