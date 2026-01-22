@@ -29,6 +29,9 @@ Each convolutional layer performs three operations sequentially: 1D-convolution 
 | Layer 6 | MaxPool1D | - | - | 4 | 4 | 0.5 |
 
 
+ ## Training and Handling Class Imbalance
+ 
+
 
 
 
