@@ -27,10 +27,11 @@ Each convolutional layer performs three operations sequentially: 1D-convolution 
 | Layer 6 | MaxPool1D | - | - | 4 | 4 | 0.5 |
 
 
-## Pipeline for 
+## End-to-end Pipeline of the Model
 
+You know what? Pipelines are important for our world. Since ancient civilizations, humanity has built pipelines to create sustainable infrastructure. They are everywhere from irrigation channels to modern systems carrying natural gas, electricity, and data. Deep learning models are not so different from these systems. They also have pipelines that carry input data through layers to generate the desired output. So, wear your work gear and grab your tools—we’re heading on-site to review the pipeline of DeepSleepNet.
 
-<img width="1040" height="506" alt="image" src="https://github.com/user-attachments/assets/06e50254-f0d3-49f5-82cc-7e060509e54a" />
+<img width="840" height="406" alt="image" src="https://github.com/user-attachments/assets/06e50254-f0d3-49f5-82cc-7e060509e54a" />
 
 
 
