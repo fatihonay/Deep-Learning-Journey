@@ -53,31 +53,19 @@ Thus, the resulting sequence of features is passed to the next stage of Bi-LSTM
 $$\mathbf{A} = \{a_1, a_2, \dots, a_N\}$$
 
 ## 3. Part: Sequence Residual Learning
-This stage processes the sequence of extracted features $\mathbf{A}$ to learn temporal transition rules. It utilizes Bidirectional-LSTMs and a residual shortcut connection.
+This stage processes the sequence of extracted features $\mathbf{A}$ to learn temporal transition rules. It utilizes two layers of Bi-LSTMs and a residual shortcut connection. The Bi-LSTM layers process the sequence in both forward and backward directions to utilize past and future context. The Forward and Backward LSTMs could be indicated lile this;
 
-### Bidirectional LSTM Processing
-The model processes the sequence in both forward and backward directions to utilize past and future context.
-
-**Forward LSTM:**
 $$h^f_t, c^f_t = LSTM_{\theta_f} (h^f_{t-1}, c^f_{t-1}, a_t)$$
 
-**Backward LSTM:**
 $$h^b_t, c^b_t = LSTM_{\theta_b} (h^b_{t+1}, c^b_{t+1}, a_t)$$
 
-*Where:*
-* $h$ and $c$ represent the hidden states and cell states, respectively.
-* Initial states $h^f_0, c^f_0$ and $h^b_{N+1}, c^b_{N+1}$ are set to zero vectors.
-
-### Residual Shortcut Connection
-To facilitate combination of raw temporal features obtained by CNN layers, features $a_t$ are transformed via a Fully Connected (FC) layer to match the dimensions of the LSTM output.
-
+where $h$ and $c$ represent the hidden states and cell states, respectively. Furthermore, the residual short-cut connection is employed  to provide combination of raw temporal features, $a_t$, obtained by CNN layers with the output of Bi-LSTM phase. This line includes fully-connected (FC) layer;
 $$\text{Shortcut}_t = FC_\theta(a_t)$$
 
 ```{note}
 The $$FC$$ function includes matrix multiplication, batch normalization, and ReLU activation.
 ```
 
-###  Output Calculation
 The final output vector $o_t$ is computed by concatenating the forward and backward hidden states and performing an element-wise addition with the shortcut connection.
 
 $$o_t = (h^f_t \parallel h^b_t) + FC_\theta(a_t)$$
@@ -86,8 +74,6 @@ $$o_t = (h^f_t \parallel h^b_t) + FC_\theta(a_t)$$
 Short-cut FC layer is responsible for residual operation. By addling this line into model, we create a highway for gradients to direclty flow during training. Additionally, we directly support reasoning of the model with raw CNN features as well. 
 
 ```
-
-
 
  ## Training and Handling Class Imbalance
 
