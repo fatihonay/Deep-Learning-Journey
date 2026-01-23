@@ -34,11 +34,11 @@ You know what? Pipelines are important for our world. Since ancient civilization
 <img width="840" height="406" alt="image" src="https://github.com/user-attachments/assets/06e50254-f0d3-49f5-82cc-7e060509e54a" />
 
 ### 1. Part: Input Definition
-Sequence of $N$ single-channel EEG epochs representing 30 seconds of data is fed into model input
+Sequence of single-channel EEG epochs with a length of $N$ (represents 30 seconds);
 
 $$\mathbf{X} = \{x_1, x_2, \dots, x_N\}$$
 
-### 2. Part A: Feature Extraction (Two-Stream CNN)
+### 2. Part:  Feature Extraction
 Two separate CNNs are used to extract features from each epoch $x_i$. One CNN uses small filters ($\theta_s$) to capture temporal detail, and the other uses large filters ($\theta_l$) to capture frequency information.
 
 ### Small Filter Stream
@@ -54,6 +54,31 @@ $$a_i = h^s_i \parallel h^l_i$$
 
 The resulting sequence of features is passed to the next stage:
 $$\mathbf{A} = \{a_1, a_2, \dots, a_N\}$$
+
+## 3. Part: Sequence Residual Learning
+This stage processes the sequence of extracted features $\mathbf{A}$ to learn temporal transition rules. It utilizes Bidirectional-LSTMs and a residual shortcut connection.
+
+Let $t$ denote the time index ($t = 1 \dots N$).
+
+### Bidirectional LSTM Processing
+The model processes the sequence in both forward and backward directions to utilize past and future context.
+
+**Forward LSTM:**
+$$h^f_t, c^f_t = LSTM_{\theta_f} (h^f_{t-1}, c^f_{t-1}, a_t)$$
+
+**Backward LSTM:**
+$$h^b_t, c^b_t = LSTM_{\theta_b} (h^b_{t+1}, c^b_{t+1}, a_t)$$
+
+*Where:*
+* $h$ and $c$ represent the hidden states and cell states, respectively.
+* Initial states $h^f_0, c^f_0$ and $h^b_{N+1}, c^b_{N+1}$ are set to zero vectors.
+
+### Residual Shortcut Connection
+To facilitate gradient flow and combine raw features with temporal context, the input feature $a_t$ is transformed via a Fully Connected (FC) layer to match the dimensions of the LSTM output.
+
+$$\text{Shortcut}_t = FC_\theta(a_t)$$
+
+*Note: The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.*
 
 
  ## Training and Handling Class Imbalance
