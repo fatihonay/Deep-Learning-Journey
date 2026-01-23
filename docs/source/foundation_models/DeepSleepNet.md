@@ -19,14 +19,19 @@ Each convolutional layer performs three operations sequentially: 1D-convolution 
 <img width="1800" height="1050" alt="image" src="https://github.com/user-attachments/assets/4ce4a32f-716b-436b-b7b7-5a4b6dd5db32" />
 
 
-
-
 | Component | Type | Kernel Size | Num Filters | Pool Size | Stride | Dropout |
 |-----------|------|-------------|-------------|-----------|-------------|---------|
 | Layer 1 | Conv1D | Fs/2 or 4XFs | 64 | - | Fs/16 or Fs/2 | 0.0 |
 | Layer 2 | MaxPool1D | - | - | 8 | 8 | 0.5 |
 | Layer 3-5 | Conv1D | 8 | 128 | - | - | 0.0 |
 | Layer 6 | MaxPool1D | - | - | 4 | 4 | 0.5 |
+
+
+## Pipeline for 
+
+
+<img width="526" height="280" alt="image" src="https://github.com/user-attachments/assets/451554a6-caac-4194-986a-64ae85476b0a" />
+
 
 
  ## Training and Handling Class Imbalance
