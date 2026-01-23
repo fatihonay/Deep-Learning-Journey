@@ -50,7 +50,7 @@ The outputs of the two CNNs are then concatenated to form the combined feature v
 $$a_i = h^s_i \parallel h^l_i$$
 
 Thus, the resulting sequence of features is passed to the next stage of Bi-LSTM
-$$\mathbf{A} = \{a_1, a_2, \dots, a_N\}$$
+$\mathbf{A} = \{a_1, a_2, \dots, a_N\}$
 
 ## 3. Part: Sequence Residual Learning
 This stage processes the sequence of extracted features $\mathbf{A}$ to learn temporal transition rules. It utilizes two layers of Bi-LSTMs and a residual shortcut connection. The Bi-LSTM layers process the sequence in both forward and backward directions to utilize past and future context. The Forward and Backward LSTMs could be indicated lile this;
@@ -60,10 +60,10 @@ $$h^f_t, c^f_t = LSTM_{\theta_f} (h^f_{t-1}, c^f_{t-1}, a_t)$$
 $$h^b_t, c^b_t = LSTM_{\theta_b} (h^b_{t+1}, c^b_{t+1}, a_t)$$
 
 where $h$ and $c$ represent the hidden states and cell states, respectively. Furthermore, the residual short-cut connection is employed  to provide combination of raw temporal features, $a_t$, obtained by CNN layers with the output of Bi-LSTM phase. This line includes fully-connected (FC) layer;
-$$\text{Shortcut}_t = FC_\theta(a_t)$$
+$\text{Shortcut}_t = FC_\theta(a_t)$
 
 ```{note}
-The $$FC$$ function includes matrix multiplication, batch normalization, and ReLU activation.
+The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.
 ```
 
 The final output vector $o_t$ is computed by concatenating the forward and backward hidden states and performing an element-wise addition with the shortcut connection.
