@@ -84,7 +84,7 @@ The lenght of sleep stages during the sleep are not equal and this situation lea
  
 The training process consists of two phases. At the first phase, onyl CNN part is trained. The second Bi-LSTM and FC is not in the game for now. For training the CNN part, softmax layer is stacked with both CNN lines for the pre-training operation. Then, this pre-train model fed by class-balance training set.  The class-balance training set is obtained from duplicating the minority sleep stages in the original training set such that all sleep stage have the same number of samples. `Oversampling` strategy is used for this class-balance training set.
  
-
+In the second stage, the pre-trained CNN part is mounted with following Bi-LSTM and FC layers. Note that the softmax layers are discarded before unifying these blocks. During this training, learning rates of two stages are adjusted to different levels. CNNs with lower learning rate while Bi-LSTM and FC with higher learning rate. This choice, especially lower learning rate of CNN part, provided to avoid over-fitting of CNN part to majority of sleep classes (dont forget we also performed pre-training on the CNN part). Another trick to prevent overfitting 
 
 
 
