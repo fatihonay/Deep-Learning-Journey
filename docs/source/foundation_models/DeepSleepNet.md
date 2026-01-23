@@ -76,7 +76,9 @@ To facilitate combination of raw temporal features obtained by CNN layers, featu
 
 $$\text{Shortcut}_t = FC_\theta(a_t)$$
 
-*Note: The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.*
+```{note}
+The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.
+```
 
 ###  Output Calculation
 The final output vector $o_t$ is computed by concatenating the forward and backward hidden states and performing an element-wise addition with the shortcut connection.
