@@ -78,6 +78,10 @@ Short-cut FC layer is responsible for residual operation. By addling this line i
  ## Training and Handling Class Imbalance
 
  The lenght of sleep stages are not equal and this situaiton leads imbalanced number of classes. This is serious issue since model could tend to learn only the majority of sleep stages.
+
+ <img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/a34ffb1f-a0c7-4685-a0d4-e703c567f21f" />
+ 
+
  
 
 
