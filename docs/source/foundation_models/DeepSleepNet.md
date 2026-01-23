@@ -72,13 +72,13 @@ $$h^b_t, c^b_t = LSTM_{\theta_b} (h^b_{t+1}, c^b_{t+1}, a_t)$$
 * Initial states $h^f_0, c^f_0$ and $h^b_{N+1}, c^b_{N+1}$ are set to zero vectors.
 
 ### Residual Shortcut Connection
-To facilitate gradient flow and combine raw features with temporal context, the input feature $a_t$ is transformed via a Fully Connected (FC) layer to match the dimensions of the LSTM output.
+To facilitate combination of raw temporal features obtained by CNN layers, features $a_t$ are transformed via a Fully Connected (FC) layer to match the dimensions of the LSTM output.
 
 $$\text{Shortcut}_t = FC_\theta(a_t)$$
 
 *Note: The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.*
 
-### Final Output Calculation
+###  Output Calculation
 The final output vector $o_t$ is computed by concatenating the forward and backward hidden states and performing an element-wise addition with the shortcut connection.
 
 $$o_t = (h^f_t \parallel h^b_t) + FC_\theta(a_t)$$
