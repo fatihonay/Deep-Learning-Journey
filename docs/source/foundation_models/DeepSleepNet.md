@@ -30,7 +30,7 @@ Each convolutional layer performs three operations sequentially: 1D-convolution 
 ## Pipeline for 
 
 
-<img width="526" height="280" alt="image" src="https://github.com/user-attachments/assets/451554a6-caac-4194-986a-64ae85476b0a" />
+<img width="1040" height="506" alt="image" src="https://github.com/user-attachments/assets/06e50254-f0d3-49f5-82cc-7e060509e54a" />
 
 
 
