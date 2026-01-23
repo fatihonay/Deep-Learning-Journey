@@ -33,10 +33,27 @@ You know what? Pipelines are important for our world. Since ancient civilization
 
 <img width="840" height="406" alt="image" src="https://github.com/user-attachments/assets/06e50254-f0d3-49f5-82cc-7e060509e54a" />
 
-
-Let the input be a sequence of $N$ single-channel EEG epochs, where each epoch represents 30 seconds of data.
+### 1. Part: Input Definition
+Sequence of $N$ single-channel EEG epochs representing 30 seconds of data is fed into model input
 
 $$\mathbf{X} = \{x_1, x_2, \dots, x_N\}$$
+
+### 2. Part A: Feature Extraction (Two-Stream CNN)
+Two separate CNNs are used to extract features from each epoch $x_i$. One CNN uses small filters ($\theta_s$) to capture temporal detail, and the other uses large filters ($\theta_l$) to capture frequency information.
+
+### Small Filter Stream
+$$h^s_i = CNN_{\theta_s}(x_i)$$
+
+### Large Filter Stream
+$$h^l_i = CNN_{\theta_l}(x_i)$$
+
+### Feature Concatenation
+The outputs of the two streams are concatenated to form the combined feature vector $a_i$ for the $i$-th epoch.
+
+$$a_i = h^s_i \parallel h^l_i$$
+
+The resulting sequence of features is passed to the next stage:
+$$\mathbf{A} = \{a_1, a_2, \dots, a_N\}$$
 
 
  ## Training and Handling Class Imbalance
