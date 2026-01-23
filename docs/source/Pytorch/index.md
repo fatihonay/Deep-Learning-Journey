@@ -7,4 +7,5 @@ Simple and quick recap of Pytoch basics for everyone !
 
 Pytorch_1.ipynb
 Pytorch_2.ipynb
+Baby_NeuralNet.ipynb
 ```
