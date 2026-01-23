@@ -79,7 +79,7 @@ Short-cut FC layer is responsible for residual operation. By addling this line i
 
  The lenght of sleep stages are not equal and this situaiton leads imbalanced number of classes. This is serious issue since model could tend to learn only the majority of sleep stages.
 
- <img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/a34ffb1f-a0c7-4685-a0d4-e703c567f21f" />
+ <img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/a34ffb1f-a0c7-4685-a0d4-e703c567f21f" />[^2]
  
 
  
@@ -95,3 +95,4 @@ Short-cut FC layer is responsible for residual operation. By addling this line i
 
 ## References 
 [^1]: SUPRATAK, Akara, et al. DeepSleepNet: A model for automatic sleep stage scoring based on raw single-channel EEG. IEEE transactions on neural systems and rehabilitation engineering, 2017, 25.11: 1998-2008.
+[^2]: https://miriqa.com/blogs/educational-articles/learn-about-the-sleep-cycle-stages?srsltid=AfmBOoqR84C9lK96HnpRJi8WEky1OOWtHhfexO1u4WPcFPyN7Fd1jK06
