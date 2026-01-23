@@ -58,8 +58,6 @@ $$\mathbf{A} = \{a_1, a_2, \dots, a_N\}$$
 ## 3. Part: Sequence Residual Learning
 This stage processes the sequence of extracted features $\mathbf{A}$ to learn temporal transition rules. It utilizes Bidirectional-LSTMs and a residual shortcut connection.
 
-Let $t$ denote the time index ($t = 1 \dots N$).
-
 ### Bidirectional LSTM Processing
 The model processes the sequence in both forward and backward directions to utilize past and future context.
 
@@ -79,6 +77,11 @@ To facilitate gradient flow and combine raw features with temporal context, the 
 $$\text{Shortcut}_t = FC_\theta(a_t)$$
 
 *Note: The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.*
+
+### Final Output Calculation
+The final output vector $o_t$ is computed by concatenating the forward and backward hidden states and performing an element-wise addition with the shortcut connection.
+
+$$o_t = (h^f_t \parallel h^b_t) + FC_\theta(a_t)$$
 
 
  ## Training and Handling Class Imbalance
