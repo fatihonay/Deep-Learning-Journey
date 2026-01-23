@@ -39,20 +39,17 @@ Sequence of single-channel EEG epochs with a length of $N$ (represents 30 second
 $$\mathbf{X} = \{x_1, x_2, \dots, x_N\}$$
 
 ### 2. Part:  Feature Extraction
-Two separate CNNs are used to extract features from each epoch $x_i$. One CNN uses small filters ($\theta_s$) to capture temporal detail, and the other uses large filters ($\theta_l$) to capture frequency information.
+Two separate CNNs are used to extract features from each epoch $x_i$. One CNN uses small filters ($\theta_s$) to capture temporal detail, and the other uses large filters ($\theta_l$) to capture frequency information. At the end of this part, there are two outputs from each CNN side;
 
-### Small Filter Stream
 $$h^s_i = CNN_{\theta_s}(x_i)$$
 
-### Large Filter Stream
 $$h^l_i = CNN_{\theta_l}(x_i)$$
 
-### Feature Concatenation
-The outputs of the two streams are concatenated to form the combined feature vector $a_i$ for the $i$-th epoch.
+The outputs of the two CNNs are then concatenated to form the combined feature vector $a_i$ for the $i$-th epoch.
 
 $$a_i = h^s_i \parallel h^l_i$$
 
-The resulting sequence of features is passed to the next stage:
+Thus, the resulting sequence of features is passed to the next stage of Bi-LSTM
 $$\mathbf{A} = \{a_1, a_2, \dots, a_N\}$$
 
 ## 3. Part: Sequence Residual Learning
@@ -86,7 +83,7 @@ The final output vector $o_t$ is computed by concatenating the forward and backw
 $$o_t = (h^f_t \parallel h^b_t) + FC_\theta(a_t)$$
 
 ```{attention}
-FC layer is responsible for residual operation. By addling this line into model, we create a highway for gradients to direclty flow during training. Additionally, we directly support reasoning of the model with raw CNN features as well. 
+Short-cut FC layer is responsible for residual operation. By addling this line into model, we create a highway for gradients to direclty flow during training. Additionally, we directly support reasoning of the model with raw CNN features as well. 
 
 ```
 
