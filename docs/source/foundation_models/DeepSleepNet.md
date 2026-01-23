@@ -60,7 +60,8 @@ $$h^f_t, c^f_t = LSTM_{\theta_f} (h^f_{t-1}, c^f_{t-1}, a_t)$$
 $$h^b_t, c^b_t = LSTM_{\theta_b} (h^b_{t+1}, c^b_{t+1}, a_t)$$
 
 where $h$ and $c$ represent the hidden states and cell states, respectively. Furthermore, the residual short-cut connection is employed  to provide combination of raw temporal features, $a_t$, obtained by CNN layers with the output of Bi-LSTM phase. This line includes fully-connected (FC) layer;
-$\text{Shortcut}_t = FC_\theta(a_t)$
+
+$$FC_\theta(a_t)$$
 
 ```{note}
 The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.
@@ -77,16 +78,12 @@ Short-cut FC layer is responsible for residual operation. By addling this line i
 
  ## Training and Handling Class Imbalance
 
- The lenght of sleep stages are not equal and this situaiton leads imbalanced number of classes. This is serious issue since model could tend to learn only the majority of sleep stages.
+The lenght of sleep stages during the sleep are not equal and this situation leads imbalanced number of classes. This is serious issue since model could tend to learn only sleep stages with majority. We will see some useful tricks to handle overfitting and class imbalance problem.
 
  <img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/a34ffb1f-a0c7-4685-a0d4-e703c567f21f" />[^2]
  
-
+The training process consists of two phases. At the first phase, onyl CNN part is trained. The second Bi-LSTM and FC is not in the game for now. For training the CNN part, softmax layer is stacked with both CNN lines for the pre-training operation. Then, this pre-train model fed by class-balance training set.  The class-balance training set is obtained from duplicating the minority sleep stages in the original training set such that all sleep stage have the same number of samples. `Oversampling` strategy is used for this class-balance training set.
  
-
-
-
-
 
 
 
