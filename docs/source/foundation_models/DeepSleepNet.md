@@ -77,13 +77,19 @@ To facilitate combination of raw temporal features obtained by CNN layers, featu
 $$\text{Shortcut}_t = FC_\theta(a_t)$$
 
 ```{note}
-The $FC$ function includes matrix multiplication, batch normalization, and ReLU activation.
+The $$FC$$ function includes matrix multiplication, batch normalization, and ReLU activation.
 ```
 
 ###  Output Calculation
 The final output vector $o_t$ is computed by concatenating the forward and backward hidden states and performing an element-wise addition with the shortcut connection.
 
 $$o_t = (h^f_t \parallel h^b_t) + FC_\theta(a_t)$$
+
+```{attention}
+FC layer is responsible for residual operation. By addling this line into model, we create a highway for gradients to direclty flow during training. Additionally, we directly support reasoning of the model with raw CNN features as well. 
+
+```
+
 
 
  ## Training and Handling Class Imbalance
